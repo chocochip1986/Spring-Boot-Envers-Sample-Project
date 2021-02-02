@@ -19,7 +19,6 @@ public class TestRestController {
 
     @GetMapping
     public ResponseEntity<String> hihi() {
-//        personJpaRepo.save(Person.builder().name("Person "+System.currentTimeMillis()).build());
         personJpaRepo.save(Person.builder().name("Person "+System.currentTimeMillis()).build());
         animalJpaRepo.save(Animal.builder().name("Animal "+System.currentTimeMillis()).build());
 
